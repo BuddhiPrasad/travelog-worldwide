@@ -16,7 +16,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex flex-col">
           <TravelerHeader />
-
           <WrapperContainer>
             <div className="flex pt-4">{children}</div>
           </WrapperContainer>

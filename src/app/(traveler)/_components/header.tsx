@@ -1,15 +1,21 @@
 import SiteLogo from "@/components/logo";
 import { Button } from "@/components/ui/button";
+import UserAvater from "@/components/user-avater";
 import WrapperContainer from "@/components/wrapper-container";
 import React from "react";
 
+import { FaCaretDown } from "react-icons/fa";
+
 const TravelerHeader = () => {
   return (
-    <div className="pt-4 pb-4 bg-blue-100">
+    <div className="pt-4 pb-4 border border-b sticky top-0 bg-secondary ">
       <WrapperContainer>
-        <div className="flex items-center justify-between bg-red-300">
+        <div className="flex items-center justify-between">
           <SiteLogo />
-          <Button>Click Me</Button>
+          <div className="flex gap-x-2 items-center">
+            <UserAvater />
+            <FaCaretDown />
+          </div>
         </div>
       </WrapperContainer>
     </div>
